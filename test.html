@@ -1,0 +1,1379 @@
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/koompi.svg" type="image/x-icon" sizes="16x16">
+    <title>Onelab Portal</title>
+    <style>
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+            box-shadow: 0 0 2vw 0vw rgb(0 0 0 / 20%);
+        }
+    </style>
+    <script src="js/read_json.js"></script>
+    <script src="js/mainpage.js"></script>
+</head>
+
+<body class="h-100">
+    <div id="static_navbar"><svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="home" viewBox="0 0 16 16">
+                <path
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+                </path>
+            </symbol>
+            <symbol id="law" viewBox="0 0 16 16">
+                <path
+                    d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z">
+                </path>
+            </symbol>
+            <symbol id="ict" viewBox="0 0 16 16">
+                <path
+                    d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z">
+                </path>
+            </symbol>
+            <symbol id="health" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01L8 2.748ZM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5Zm8.252-6.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162l-1.874-4.686Z">
+                </path>
+            </symbol>
+            <symbol id="gen_edu" viewBox="0 0 16 16">
+                <path
+                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z">
+                </path>
+                <path
+                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z">
+                </path>
+            </symbol>
+            <symbol id="art" viewBox="0 0 16 16">
+                <path
+                    d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                </path>
+                <path
+                    d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z">
+                </path>
+            </symbol>
+            <symbol id="speedometer2" viewBox="0 0 16 16">
+                <path
+                    d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
+                </path>
+                <path fill-rule="evenodd"
+                    d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
+                </path>
+            </symbol>
+            <symbol id="search" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+            </symbol>
+            <symbol id="back_arrow" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z">
+                </path>
+            </symbol>
+        </svg>
+        <div class="container-fluid g-0 fixed-top" id="main_body">
+            <div class="row mx-0 g-2 m-row py-1 bg-primary bg-gradient">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-gradient"
+                        aria-label="Second navbar example">
+                        <div class="container-fluid justify-content-between">
+                            <button class="btn btn-primary bg-gradient" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" type="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand ps-2" href="index.html">
+                                <img src="images/Koompi-White.png" alt="KOOMPI" width="150" height="40" srcset=""
+                                    class="d-inline-block align-text-top">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarsExample02" aria-controls="navbarsExample02"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <svg class="bi bi-search" width="16" height="16">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample02">
+                                <ul class="navbar-nav me-auto"></ul>
+                                <hr>
+                                <form class="d-flex">
+                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dynamic_sidebar" style="height: max-content">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            style="transition: 0.5s;">
+            <div class="modal-dialog modal-dialog-scrollable model-sm h-100 m-0">
+                <div class="modal-content h-100 w-75">
+                    <div class="modal-header justify-content-center text-center">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            <a class="navbar-brand ps-2" href="#">
+                                <img src="images/Koompi-Dark.png" alt="KOOMPI" width="150" height="40" srcset=""
+                                    class="d-inline-block align-text-top">
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('Home')" class="nav-link active" aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#home"></use>
+                                    </svg>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('STEM')" class="nav-link link-dark" aria-current="page">
+                                    <img class="bi me-2" src="images/stem-logo.png" alt="KOOMPI" width="16" height="16"
+                                        srcset="">
+                                    STEM
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('Health')" class="nav-link link-dark" aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#health"></use>
+                                    </svg>
+                                    Health
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('Law')" class="nav-link link-dark" aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#law"></use>
+                                    </svg>
+                                    Law
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('Art')" class="nav-link link-dark" aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#art"></use>
+                                    </svg>
+                                    Art
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('General Education')" class="nav-link link-dark"
+                                    aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#gen_edu"></use>
+                                    </svg>
+                                    General Education
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('Information and Communication Technology')"
+                                    class="nav-link link-dark" aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#ict"></use>
+                                    </svg>
+                                    Information and Communication Technology
+                                </a>
+                            </li>
+                            <hr>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('Science')" class="nav-link link-dark"
+                                    aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#speedometer2"></use>
+                                    </svg>
+                                    Science
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('Technology')" class="nav-link link-dark"
+                                    aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#speedometer2"></use>
+                                    </svg>
+                                    Technology
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('Engineering')" class="nav-link link-dark"
+                                    aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#speedometer2"></use>
+                                    </svg>
+                                    Engineering
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript: gotoPage('Mathematic')" class="nav-link link-dark"
+                                    aria-current="page">
+                                    <svg class="bi me-2" width="16" height="16">
+                                        <use xlink:href="#speedometer2"></use>
+                                    </svg>
+                                    Mathematic
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <p class="badge text-dark">KOOMPI © 2020 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dynamic_cards" style="height: max-content">
+        <div class="container-fluid h-100 p-3 bg-light bg-gradient" style="margin-top: 10vh;">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/wikipedia_for_schools/index.htm"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/wikipedia120.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Wikipedia English</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">English
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://sala.koompi.com" class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/sala-logo.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Sala KOOMPI</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">KOOMPI
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://wikipedia.koompi.com" class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/wikipedia120.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Wikipedia Khmer</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">ខ្មែរ
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://wiktionary.koompi.com" class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/wiktionary.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Wiktionary English-Khmer</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">
+                                    វិចនានុក្រម</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://wikibook.koompi.com" class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/wikipedia120.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Wikipedia</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Book
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://phet.koompi.com" class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/phet.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">PHET</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">
+                                    Simulation</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/khan_academy/index.html"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/kalogo.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Khan Academy</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">
+                                    Education</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="javascript: display_subcard('ck12', 'ck12-offcanvas')"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/ck12logo.jpg" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">CK-12 Textbooks</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Books
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/medline_plus/index.html"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/medlinepluslogo.png" class="card-img-top" alt="..."
+                                    loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">MedlinePlus</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Medical
+                                    Encyclopedia</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/khan_academy/science/healthcare-and-medicine/index.html"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/khanhealthlogo.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Khan Academy</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Health
+                                    and Medicine</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/infonet/starthere.html"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/infonet.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Infonet Biodivision</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">
+                                    Agriculture and Environment</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/ebooks/index.html"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/coolbooksmall.jpg" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Great Book of the World</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Ebook
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/practical_action/index.html"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/practical_action.png" class="card-img-top" alt="..."
+                                    loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Practical Action</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Law
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/math_expression/index.html"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/mathexpressionlogo.jpg" class="card-img-top" alt="..."
+                                    loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Math Expression</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Math
+                                    Lesson</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="javascript: display_subcard('hesperian', 'hesperian-offcanvas')"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/hesperianlogo.png" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Hesperian Health</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">
+                                    Guidebook</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/powertyping/index.html"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/powertypinglogo.jpg" class="card-img-top" alt="..."
+                                    loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Power Typing</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Typing
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="index.html" class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/scratchlogo.jpg" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Scratch</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">MIT
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/musictheory/index.html"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/musictheorylogo.jpg" class="card-img-top" alt="..."
+                                    loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Music Theory</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Music
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://rachel.koompi.com/modules/understanding_algebra/default.htm"
+                        class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/understandingalgebralogo.png" class="card-img-top" alt="..."
+                                    loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">Understand Algebra</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">Math
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="http://w3.koompi.com" class="text-decoration-none text-reset">
+                        <div class="card h-100 w-100 border border-dark border-2">
+                            <div class="ratio ratio-16x9 border-dark border-bottom">
+                                <img src="images/main/w3.jpg" class="card-img-top" alt="..." loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6">W3school</h5>
+                                <h6 class="card-subtitle mb-2 text-muted text-truncate" style="font-size: small">
+                                    Programming</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div id="dynamic_subcards" style="height: max-content">
+        <div id="hesperian">
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="hesperian-offcanvas" data-bs-backdrop="false"
+                aria-labelledby="offcanvasBottomLabel"
+                style="margin-top: 10vh; height: calc(100% - 10vh); transition: all 0.5s ease 0s; visibility: hidden;"
+                aria-hidden="true">
+                <div class="offcanvas-header d-flex justify-content-around" style="background-color: #dee2e6;">
+                    <div class="flex-grow-1"></div>
+                    <h5 class="offcanvas-title flex-grow-1 text-truncate" id="offcanvasExampleLabel">Hesperian Health
+                        Guides</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                    <div class="container-fluid h-100 p-3">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/en_wtnd_2011_full/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/where_there_is_no_doctor_a_village_health_care_handbook.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Where There Is No Doctor</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">A village health care handbook</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/en_dent_2012_full/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/where_there_is_no_dentist.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Where There Is No Dentist</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">For Teeth Health</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/en_wwhnd_2012_full/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/where_woman_have_no_doctor.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Where Women Have No Doctor</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">For Woman Health</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/DVC_2009/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/disabled_village_children.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Disabled Village Children</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Care for Disabled Child</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/en_WWD_2008_full_book/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/a_health_handbook_for_woman_with_disability.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Women with Disabilities</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">A Health Handbook</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/en_midw_2011_Full_Book/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/a_book_for_midwife.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">A Book for Midwives</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Care for pregnancy and birth</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/en_hcwd_2004_Full_Book/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/helping_children who_are_deaf.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Helping Children Who Are Deaf</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Care for Deaf Children</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/en_hcwb_2000_whole_book/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/helping_children_who_are_blind.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Helping Children Who Are Blind</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Care for Blind Children</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/Cholera_EN/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/how_to_prevent_chloera.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Cholera Prevention</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Fact Sheet</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/EHB_Sanitation_EN_watermark/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/sanitation_and_cleanliness.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Sanitation and Cleanliness</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">For a Healthy Environment</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/ehb_water_EN_watermark/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/water_for_life.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Water for Life</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Community water security</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/en_cgeh_2012_full/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/a_community_guide_to_environmental_health.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Environmental Health</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Community Guide</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/hesperian_health/en_hhwl_2012_full/page1.html"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/hesperian/helping_health_worker_learn.png"
+                                                class="card-img-top" alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Helping Health Workers Learn</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Learning Material</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ck12">
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="ck12-offcanvas" data-bs-backdrop="false"
+                aria-labelledby="offcanvasBottomLabel"
+                style="margin-top: 10vh; height: calc(100% - 10vh); transition: all 0.5s ease 0s; visibility: hidden;"
+                aria-hidden="true">
+                <div class="offcanvas-header d-flex justify-content-around" style="background-color: #dee2e6;">
+                    <div class="flex-grow-1"></div>
+                    <h5 class="offcanvas-title flex-grow-1 text-truncate" id="offcanvasExampleLabel">CK-12 Textbooks
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                    <div class="container-fluid h-100 p-3">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/algebra_explorations.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/Algebra_exploration.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Algebra Explorations</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Pre-K through Grade 7</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_algebra1.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/algebra1.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Basic Algebra</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_basic_algebra_concepts.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/algebra1_teacher.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Basic Algebra Concept</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_algebra1.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/algebra2.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Algebra 1</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/algebra1_teacher_edition.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/algebra1_teacher.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Algebra 1</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Teacher Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_algebra2.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/algebra2.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Algebra 2</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_basic_geometry.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/basic_geometry.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Basic Geometry</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_basic_geometry_teacher_edition.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/basic_geometry_teacher.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Basic Geometry</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Teacher Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_basic_geometry_concepts.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/basic_geometry_concept.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Basic Algebra Concept</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_geometry_teacher_edition.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/geometry_teacher.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Geometry</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Teacher Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_trigonometry.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/trigonometry.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Trigonometry</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_trigonometry_concepts.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/trigonometry_concept.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">CK-12 Trigonometry Concept</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_trigonometry_teacher_edition.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/trigonometry_teacher.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Trigonometry</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Teacher Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_basic_prob_stats_short.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/basic_probab.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Basic Probability and Statistics</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Short Course</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_basic_prob_stats_full.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/basic_probab_full.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Basic Probability and Statistics</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Full Course</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_basic_prob_stats_concept.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/basic_probab_concept_full.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">CK-12 Basic Probability and Statistics Concept
+                                            </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Full Course</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_adv_prob_stats_concept.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/advanced_probab.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">CK-12 Advance Probability and Statistics Concept
+                                            </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Short Course</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_prob_stats_adv_placement.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/adv_probab_stat.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Probability and Statistics</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Advanced Placement</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_adv_prob_stats_teacher_edition.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/adv_prob_stat_teacher.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Advanced Probability and Statistics</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Teacher Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_calculus.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/calc.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Calculus</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_calculus_teacher_edition.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/calc_teacher.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Calculus</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Teacher Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_basic_physics.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/basic_physics.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Basic Physics</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_people_physics_concepts.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/people_physics_concept.png" class="card-img-top"
+                                                alt="..." loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">CK-12 People's Physics Concepts</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_physics_star.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/physics_star.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Physics</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">From Stargazers to Starships</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_physics_21st_century.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/physics_21st.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">21st Century Physics</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Modern Physics</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_chemistry.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/chemistry.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Chemistry</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_chemistry_teacher_edition.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/chemistry_teacher.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Chemistry</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Teacher Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_chemistry_labs_demos.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/chemistry_lab_demo.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Chemistry</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Lab and Demo</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_biology.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/bio.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Biology</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Student Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_biology_workbook.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/bio_workbook.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Biology</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Workbook</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_biology_teacher_edition.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/bio_teacher.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Biology</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Teacher Edition</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_life_science_ms.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/life_science.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Life Science for Middle School</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Science</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_earth_science_concepts.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/es_concept.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Earth Science Concepts</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">Earth Science</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_earth_science_ms.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/es_midschool.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Earth Science</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">For Middle Schools</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_earth_science_hs.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/es_hischool.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Earth Science</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">For High Schools</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="http://rachel.koompi.com/modules/ck12/ck12_engineering_hs.pdf"
+                                    class="text-decoration-none text-reset">
+                                    <div class="card h-100 w-100 border border-dark border-2">
+                                        <div class="ratio ratio-16x9 border-dark border-bottom">
+                                            <img src="images/ck12/engineering.png" class="card-img-top" alt="..."
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-6">Engineering</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-truncate"
+                                                style="font-size: small">An Introduction for High School</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        generate_svg();
+        generate_headnav();
+        generate_sidebar("Home");
+        generate_main_cards("Home");
+    </script> -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
