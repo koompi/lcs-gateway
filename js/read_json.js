@@ -184,6 +184,20 @@ function read_main_cards() {
             ]
         },
         {
+            "card_title": "IICBA Electronic Library",
+            "card_subtitle": "UNESCO",
+            "card_link": "javascript: display_subcard('uiel', 'uiel-offcanvas')",
+            "card_thumbnail": "images/main/UNESCO-IICBA.jpg",
+            "card_categories": [
+                "Home",
+                "STEM",
+                "Education",
+                "General Education",
+                "Science",
+                "Mathematic"
+            ]
+        },
+        {
             "card_title": "W3school",
             "card_subtitle": "Programming",
             "card_link": "http://w3.koompi.com",
@@ -468,6 +482,42 @@ function read_ck12_json(){
     return ck12_json;
 }
 
+function read_uiel_json(){
+    const uiel_json = [
+        {
+            "card_title": "Primary Mathematics in English",
+            "card_subtitle": "Teacher Guide",
+            "card_link": "http://rachel.koompi.com/modules/iicba/PRIMARY_MATHS_SERIES/MATH_PAGES/index_pages/math_home.htm",
+            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+        },
+        {
+            "card_title": "Primary Science in English",
+            "card_subtitle": "Teacher Guide",
+            "card_link": "http://rachel.koompi.com/modules/iicba/PRIMARY_SCIENCE_SERIES/SCIENCE_PAGES/index_pages/science_home.htm",
+            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+        },
+        {
+            "card_title": "Secondary Science in English",
+            "card_subtitle": "Teacher Guide",
+            "card_link": "http://rachel.koompi.com/modules/iicba/SECONDARY_SCIENCE_SERIES/index_pages/science_home.htm",
+            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+        },
+        {
+            "card_title": "School Management in English",
+            "card_subtitle": "Teacher Guide",
+            "card_link": "http://rachel.koompi.com/modules/iicba/Better_Schools/index.html",
+            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+        },
+        {
+            "card_title": "HIV/AIDS Electronic Library",
+            "card_subtitle": "Teacher Resouce",
+            "card_link": "http://rachel.koompi.com/modules/iicba/Better_Schools/index.html",
+            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+        }
+    ];
+    return uiel_json;   
+}
+
 function read_hesperian_json(){
     const hesperian_json = [
         {
@@ -594,23 +644,23 @@ function read_sidebar() {
         "secondary_list": [
             {
                 "disp_name": "Science",
-                "svg": true,
-                "img_src": "#speedometer2"
+                "svg": false,
+                "img_src": "images/stem-logo.png"
             },
             {
                 "disp_name": "Technology",
-                "svg": true,
-                "img_src": "#speedometer2"
+                "svg": false,
+                "img_src": "images/stem-logo.png"
             },
             {
                 "disp_name": "Engineering",
-                "svg": true,
-                "img_src": "#speedometer2"
+                "svg": false,
+                "img_src": "images/stem-logo.png"
             },
             {
                 "disp_name": "Mathematic",
-                "svg": true,
-                "img_src": "#speedometer2"
+                "svg": false,
+                "img_src": "images/stem-logo.png"
             }
         ]
     };

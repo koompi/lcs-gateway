@@ -212,6 +212,8 @@ function generate_subcards(item_list, div_id, title) {
 
     whole_html.push("</div>\n<hr>\n</div>\n</div>\n</div>");
     var div = document.getElementById(div_id);
+    console.log(document.getElementById(div_id));
+    console.log(document.getElementById("#"+div_id));
     div.innerHTML = whole_html.join("\n");
 }
 
@@ -226,6 +228,10 @@ function display_subcard(div_id, elmt_id) {
         else if (div_id == "hesperian") {
             const hesperian_json = read_hesperian_json();
             generate_subcards(hesperian_json, "hesperian", 'Hesperian Health Guides');
+        }
+        else if (div_id == "uiel") {
+            const uiel_json = read_uiel_json();
+            generate_subcards(uiel_json, "uiel", 'UNESCO\'s IICBA Electronic Library');
         }
     }
     var myOffcanvas = document.getElementById(elmt_id);
