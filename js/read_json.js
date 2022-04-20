@@ -107,6 +107,19 @@ function read_main_cards() {
             ]
         },
         {
+            "card_title": "OLPC Educational Packages",
+            "card_subtitle": "OLPC Project",
+            "card_link": "javascript: display_subcard('olpc', 'olpc-offcanvas')",
+            "card_thumbnail": "images/main/OLPC.png",
+            "card_categories": [
+                "Home",
+                "STEM",
+                "Science",
+                "Education",
+                "General Education",
+            ]
+        },
+        {
             "card_title": "PHET",
             "card_subtitle": "Simulation",
             "card_link": "http://phet.koompi.com",
@@ -516,6 +529,90 @@ function read_uiel_json(){
         }
     ];
     return uiel_json;   
+}
+
+function read_olpc_json(){
+    const olpc_json = [
+        {
+            "card_title": "Storybooks",
+            "card_subtitle": "OLPC Project",
+            "card_link": "http://rachel.koompi.com/modules/olpc/icdl/index.en.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "Web Design",
+            "card_subtitle": "OLPC Project",
+            "card_link": "http://rachel.koompi.com/modules/olpc/web_design/index.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "Wikibooks",
+            "card_subtitle": "OLPC Project",
+            "card_link": "http://rachel.koompi.com/modules/olpc/wikibooks/index.en.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "WikiSlice",
+            "card_subtitle": "General",
+            "card_link": "http://rachel.koompi.com/modules/olpc/wikislice-en/index.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "WikiSlice",
+            "card_subtitle": "Animals",
+            "card_link": "http://rachel.koompi.com/modules/olpc/wikislice-animals-en/index.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "Wikihow",
+            "card_subtitle": "OLPC Project",
+            "card_link": "http://rachel.koompi.com/modules/olpc/wikihow/index.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "WikiSlice",
+            "card_subtitle": "Chemistry",
+            "card_link": "http://rachel.koompi.com/modules/olpc/wikislice-chemistry-en/index.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "WikiSlice",
+            "card_subtitle": "Physics",
+            "card_link": "http://rachel.koompi.com/modules/olpc/wikislice-physics-en/index.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "Nature Photograph",
+            "card_subtitle": "OLPC Project",
+            "card_link": "http://rachel.koompi.com/modules/olpc/wp-world-images/index.en.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "World Culture",
+            "card_subtitle": "OLPC Project",
+            "card_link": "http://rachel.koompi.com/modules/olpc/wdl/index.en.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "Musical Instruments",
+            "card_subtitle": "How to Build",
+            "card_link": "http://rachel.koompi.com/modules/olpc/musical_look_at_waste/index.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "y-Bee-See",
+            "card_subtitle": "An interactive ABC picturebook",
+            "card_link": "http://rachel.koompi.com/modules/olpc/Yay-Bee-See/index.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        },
+        {
+            "card_title": "OLPC Dictionary",
+            "card_subtitle": "A compact multilingual translation dictionary",
+            "card_link": "http://rachel.koompi.com/modules/olpc/dictionary-m1/index.en.html",
+            "card_thumbnail": "images/main/OLPC.png"
+        }
+    ];
+    return olpc_json;
 }
 
 function read_hesperian_json(){

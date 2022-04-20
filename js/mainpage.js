@@ -233,6 +233,10 @@ function display_subcard(div_id, elmt_id) {
             const uiel_json = read_uiel_json();
             generate_subcards(uiel_json, "uiel", 'UNESCO\'s IICBA Electronic Library');
         }
+        else if (div_id == "olpc") {
+            const uiel_json = read_olpc_json();
+            generate_subcards(uiel_json, "olpc", 'OLPC Educational Packages');
+        }
     }
     var myOffcanvas = document.getElementById(elmt_id);
     var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
