@@ -47,6 +47,20 @@ function read_main_cards() {
             ]
         },
         {
+            "card_title": "IICBA Electronic Library",
+            "card_subtitle": "UNESCO",
+            "card_link": "javascript: display_subcard('uiel', 'uiel-offcanvas')",
+            "card_thumbnail": "images/main/UNESCO-IICBA.jpg",
+            "card_categories": [
+                "Home",
+                "STEM",
+                "Education",
+                "General Education",
+                "Science",
+                "Mathematic"
+            ]
+        },
+        {
             "card_title": "Khan Academy",
             "card_subtitle": "Education",
             "card_link": "http://rachel.koompi.com/modules/khan_academy/index.html",
@@ -122,7 +136,7 @@ function read_main_cards() {
         {
             "card_title": "PHET",
             "card_subtitle": "Simulation",
-            "card_link": "http://phet.koompi.com",
+            "card_link": "http://phet.koompi.com/phet_km/A/index.html",
             "card_thumbnail": "images/main/phet.png",
             "card_categories": [
                 "Home",
@@ -197,20 +211,6 @@ function read_main_cards() {
             ]
         },
         {
-            "card_title": "IICBA Electronic Library",
-            "card_subtitle": "UNESCO",
-            "card_link": "javascript: display_subcard('uiel', 'uiel-offcanvas')",
-            "card_thumbnail": "images/main/UNESCO-IICBA.jpg",
-            "card_categories": [
-                "Home",
-                "STEM",
-                "Education",
-                "General Education",
-                "Science",
-                "Mathematic"
-            ]
-        },
-        {
             "card_title": "W3school",
             "card_subtitle": "Programming",
             "card_link": "http://w3.koompi.com",
@@ -225,7 +225,7 @@ function read_main_cards() {
         {
             "card_title": "Wikipedia",
             "card_subtitle": "Book",
-            "card_link": "http://wikibook.koompi.com",
+            "card_link": "http://wikibook.koompi.com/wikibooks_km_all_maxi/A/%E1%9E%91%E1%9F%86%E1%9E%96%E1%9F%90%E1%9E%9A%E1%9E%8A%E1%9E%BE%E1%9E%98",
             "card_thumbnail": "images/main/wikipedia120.png",
             "card_categories": [
                 "Home",
@@ -247,7 +247,7 @@ function read_main_cards() {
         {
             "card_title": "Wikipedia Khmer",
             "card_subtitle": "ខ្មែរ",
-            "card_link": "http://wikipedia.koompi.com",
+            "card_link": "http://wikipedia.koompi.com/wikipedia_km_all_maxi/A/%E1%9E%91%E1%9F%86%E1%9E%96%E1%9F%90%E1%9E%9A%E1%9E%8A%E1%9E%BE%E1%9E%98",
             "card_thumbnail": "images/main/wikipedia120.png",
             "card_categories": [
                 "Home",
@@ -259,7 +259,7 @@ function read_main_cards() {
         {
             "card_title": "Wiktionary English-Khmer",
             "card_subtitle": "វិចនានុក្រម",
-            "card_link": "http://wiktionary.koompi.com",
+            "card_link": "http://wiktionary.koompi.com/wiktionary_km_all_maxi/A/%E1%9E%91%E1%9F%86%E1%9E%96%E1%9F%90%E1%9E%9A%E1%9E%8A%E1%9E%BE%E1%9E%98",
             "card_thumbnail": "images/main/wiktionary.png",
             "card_categories": [
                 "Home",
