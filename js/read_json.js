@@ -4,7 +4,7 @@ function read_main_cards() {
             "card_title": "CK-12 Textbooks",
             "card_subtitle": "Books",
             "card_link": "javascript: display_subcard('ck12', 'ck12-offcanvas')",
-            "card_thumbnail": "images/main/ck12logo.jpg",
+            "card_thumbnail": "images/main/ck12logo.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -17,7 +17,7 @@ function read_main_cards() {
             "card_title": "Great Book of the World",
             "card_subtitle": "Ebook",
             "card_link": "http://rachel.koompi.com/modules/ebooks/index.html",
-            "card_thumbnail": "images/main/coolbooksmall.jpg",
+            "card_thumbnail": "images/main/coolbooksmall.webp",
             "card_categories": [
                 "Home",
                 "Education",
@@ -28,7 +28,7 @@ function read_main_cards() {
             "card_title": "Hesperian Health",
             "card_subtitle": "Guidebook",
             "card_link": "javascript: display_subcard('hesperian', 'hesperian-offcanvas')",
-            "card_thumbnail": "images/main/hesperianlogo.png",
+            "card_thumbnail": "images/main/hesperianlogo.webp",
             "card_categories": [
                 "Home",
                 "Health",
@@ -39,7 +39,7 @@ function read_main_cards() {
             "card_title": "Infonet Biodivision",
             "card_subtitle": "Agriculture and Environment",
             "card_link": "http://rachel.koompi.com/modules/infonet/starthere.html",
-            "card_thumbnail": "images/main/infonet.png",
+            "card_thumbnail": "images/main/infonet.webp",
             "card_categories": [
                 "Home",
                 "Health",
@@ -50,7 +50,7 @@ function read_main_cards() {
             "card_title": "IICBA Electronic Library",
             "card_subtitle": "UNESCO",
             "card_link": "javascript: display_subcard('uiel', 'uiel-offcanvas')",
-            "card_thumbnail": "images/main/UNESCO-IICBA.jpg",
+            "card_thumbnail": "images/main/UNESCO-IICBA.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -64,7 +64,7 @@ function read_main_cards() {
             "card_title": "Khan Academy",
             "card_subtitle": "Education",
             "card_link": "http://rachel.koompi.com/modules/khan_academy/index.html",
-            "card_thumbnail": "images/main/kalogo.png",
+            "card_thumbnail": "images/main/kalogo.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -77,7 +77,7 @@ function read_main_cards() {
             "card_title": "Khan Academy",
             "card_subtitle": "Health and Medicine",
             "card_link": "http://rachel.koompi.com/modules/khan_academy/science/healthcare-and-medicine/index.html",
-            "card_thumbnail": "images/main/khanhealthlogo.png",
+            "card_thumbnail": "images/main/khanhealthlogo.webp",
             "card_categories": [
                 "Home",
                 "Health",
@@ -88,7 +88,7 @@ function read_main_cards() {
             "card_title": "Math Expression",
             "card_subtitle": "Math Lesson",
             "card_link": "http://rachel.koompi.com/modules/math_expression/index.html",
-            "card_thumbnail": "images/main/mathexpressionlogo.jpg",
+            "card_thumbnail": "images/main/mathexpressionlogo.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -101,7 +101,7 @@ function read_main_cards() {
             "card_title": "MedlinePlus",
             "card_subtitle": "Medical Encyclopedia",
             "card_link": "http://rachel.koompi.com/modules/medline_plus/index.html",
-            "card_thumbnail": "images/main/medlinepluslogo.png",
+            "card_thumbnail": "images/main/medlinepluslogo.webp",
             "card_categories": [
                 "Home",
                 "Health",
@@ -113,7 +113,7 @@ function read_main_cards() {
             "card_title": "Music Theory",
             "card_subtitle": "Music",
             "card_link": "http://rachel.koompi.com/modules/musictheory/index.html",
-            "card_thumbnail": "images/main/musictheorylogo.jpg",
+            "card_thumbnail": "images/main/musictheorylogo.webp",
             "card_categories": [
                 "Home",
                 "Art",
@@ -124,7 +124,7 @@ function read_main_cards() {
             "card_title": "OLPC Educational Packages",
             "card_subtitle": "OLPC Project",
             "card_link": "javascript: display_subcard('olpc', 'olpc-offcanvas')",
-            "card_thumbnail": "images/main/OLPC.png",
+            "card_thumbnail": "images/main/OLPC.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -137,7 +137,7 @@ function read_main_cards() {
             "card_title": "PHET",
             "card_subtitle": "Simulation",
             "card_link": "http://phet.koompi.com/phet_km/A/index.html",
-            "card_thumbnail": "images/main/phet.png",
+            "card_thumbnail": "images/main/phet.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -152,7 +152,7 @@ function read_main_cards() {
             "card_title": "Power Typing",
             "card_subtitle": "Typing",
             "card_link": "http://rachel.koompi.com/modules/powertyping/index.html",
-            "card_thumbnail": "images/main/powertypinglogo.jpg",
+            "card_thumbnail": "images/main/powertypinglogo.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -164,7 +164,7 @@ function read_main_cards() {
             "card_title": "Practical Action",
             "card_subtitle": "Law",
             "card_link": "http://rachel.koompi.com/modules/practical_action/index.html",
-            "card_thumbnail": "images/main/practical_action.png",
+            "card_thumbnail": "images/main/practical_action.webp",
             "card_categories": [
                 "Home",
                 "Law",
@@ -175,7 +175,7 @@ function read_main_cards() {
             "card_title": "Sala KOOMPI",
             "card_subtitle": "KOOMPI",
             "card_link": "https://sala.koompi.com",
-            "card_thumbnail": "images/main/sala-logo.png",
+            "card_thumbnail": "images/main/sala-logo.webp",
             "card_categories": [
                 "Home",
                 "Education",
@@ -189,7 +189,7 @@ function read_main_cards() {
             "card_title": "Scratch",
             "card_subtitle": "MIT",
             "card_link": "index.html",
-            "card_thumbnail": "images/main/scratchlogo.jpg",
+            "card_thumbnail": "images/main/scratchlogo.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -201,7 +201,7 @@ function read_main_cards() {
             "card_title": "Understand Algebra",
             "card_subtitle": "Math",
             "card_link": "http://rachel.koompi.com/modules/understanding_algebra/default.htm",
-            "card_thumbnail": "images/main/understandingalgebralogo.png",
+            "card_thumbnail": "images/main/understandingalgebralogo.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -214,7 +214,7 @@ function read_main_cards() {
             "card_title": "W3school",
             "card_subtitle": "Programming",
             "card_link": "http://w3.koompi.com",
-            "card_thumbnail": "images/main/w3.jpg",
+            "card_thumbnail": "images/main/w3.webp",
             "card_categories": [
                 "Home",
                 "STEM",
@@ -226,7 +226,7 @@ function read_main_cards() {
             "card_title": "Wikipedia",
             "card_subtitle": "Book",
             "card_link": "http://wikibook.koompi.com/wikibooks_km_all_maxi/A/%E1%9E%91%E1%9F%86%E1%9E%96%E1%9F%90%E1%9E%9A%E1%9E%8A%E1%9E%BE%E1%9E%98",
-            "card_thumbnail": "images/main/wikipedia120.png",
+            "card_thumbnail": "images/main/wikipedia120.webp",
             "card_categories": [
                 "Home",
                 "Education",
@@ -237,7 +237,7 @@ function read_main_cards() {
             "card_title": "Wikipedia English",
             "card_subtitle": "English",
             "card_link": "http://rachel.koompi.com/modules/wikipedia_for_schools/index.htm",
-            "card_thumbnail": "images/main/wikipedia120.png",
+            "card_thumbnail": "images/main/wikipedia120.webp",
             "card_categories": [
                 "Home",
                 "Education",
@@ -248,19 +248,18 @@ function read_main_cards() {
             "card_title": "Wikipedia Khmer",
             "card_subtitle": "ខ្មែរ",
             "card_link": "http://wikipedia.koompi.com/wikipedia_km_all_maxi/A/%E1%9E%91%E1%9F%86%E1%9E%96%E1%9F%90%E1%9E%9A%E1%9E%8A%E1%9E%BE%E1%9E%98",
-            "card_thumbnail": "images/main/wikipedia120.png",
+            "card_thumbnail": "images/main/wikipedia120.webp",
             "card_categories": [
                 "Home",
-                "STEM",
                 "Education",
-                "Information and Communication Technology"
+                "General Education"
             ]
         },
         {
             "card_title": "Wiktionary English-Khmer",
             "card_subtitle": "វិចនានុក្រម",
             "card_link": "http://wiktionary.koompi.com/wiktionary_km_all_maxi/A/%E1%9E%91%E1%9F%86%E1%9E%96%E1%9F%90%E1%9E%9A%E1%9E%8A%E1%9E%BE%E1%9E%98",
-            "card_thumbnail": "images/main/wiktionary.png",
+            "card_thumbnail": "images/main/wiktionary.webp",
             "card_categories": [
                 "Home",
                 "Education",
@@ -278,217 +277,217 @@ function read_ck12_json(){
             "card_title": "21st Century Physics",
             "card_subtitle": "Modern Physics",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_physics_21st_century.pdf",
-            "card_thumbnail": "images/ck12/physics_21st.png"
+            "card_thumbnail": "images/ck12/physics_21st.webp"
         },
         {
             "card_title": "Advanced Probability and Statistics",
             "card_subtitle": "Teacher Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_adv_prob_stats_teacher_edition.pdf",
-            "card_thumbnail": "images/ck12/adv_prob_stat_teacher.png"
+            "card_thumbnail": "images/ck12/adv_prob_stat_teacher.webp"
         },
         {
             "card_title": "Algebra 1",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_algebra1.pdf",
-            "card_thumbnail": "images/ck12/algebra2.png"
+            "card_thumbnail": "images/ck12/algebra2.webp"
         },
         {
             "card_title": "Algebra 1",
             "card_subtitle": "Teacher Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/algebra1_teacher_edition.pdf",
-            "card_thumbnail": "images/ck12/algebra1_teacher.png"
+            "card_thumbnail": "images/ck12/algebra1_teacher.webp"
         },
         {
             "card_title": "Algebra 2",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_algebra2.pdf",
-            "card_thumbnail": "images/ck12/algebra2.png"
+            "card_thumbnail": "images/ck12/algebra2.webp"
         },
         {
             "card_title": "Algebra Explorations",
             "card_subtitle": "Pre-K through Grade 7",
             "card_link": "http://rachel.koompi.com/modules/ck12/algebra_explorations.pdf",
-            "card_thumbnail": "images/ck12/Algebra_exploration.png"
+            "card_thumbnail": "images/ck12/Algebra_exploration.webp"
         },
         {
             "card_title": "Basic Algebra",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_algebra1.pdf",
-            "card_thumbnail": "images/ck12/algebra1.png"
+            "card_thumbnail": "images/ck12/basic_algerbra.webp"
         },
         {
             "card_title": "Basic Algebra Concept",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_basic_algebra_concepts.pdf",
-            "card_thumbnail": "images/ck12/algebra1_teacher.png"
-        },
-        {
-            "card_title": "Basic Algebra Concept",
-            "card_subtitle": "Student Edition",
-            "card_link": "http://rachel.koompi.com/modules/ck12/ck12_basic_geometry_concepts.pdf",
-            "card_thumbnail": "images/ck12/basic_geometry_concept.png"
+            "card_thumbnail": "images/ck12/basic_algerbra-concept.webp"
         },
         {
             "card_title": "Basic Geometry",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_basic_geometry.pdf",
-            "card_thumbnail": "images/ck12/basic_geometry.png"
+            "card_thumbnail": "images/ck12/basic_geometry.webp"
         },
         {
             "card_title": "Basic Geometry",
             "card_subtitle": "Teacher Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_basic_geometry_teacher_edition.pdf",
-            "card_thumbnail": "images/ck12/basic_geometry_teacher.png"
+            "card_thumbnail": "images/ck12/basic_geometry_teacher.webp"
+        },
+        {
+            "card_title": "Basic Geometry Concept",
+            "card_subtitle": "Student Edition",
+            "card_link": "http://rachel.koompi.com/modules/ck12/ck12_basic_geometry_concepts.pdf",
+            "card_thumbnail": "images/ck12/basic_geometry_concept.webp"
         },
         {
             "card_title": "Basic Physics",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_basic_physics.pdf",
-            "card_thumbnail": "images/ck12/basic_physics.png"
+            "card_thumbnail": "images/ck12/basic_physics.webp"
         },
         {
             "card_title": "Basic Probability and Statistics",
             "card_subtitle": "Short Course",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_basic_prob_stats_short.pdf",
-            "card_thumbnail": "images/ck12/basic_probab.png"
+            "card_thumbnail": "images/ck12/basic_probab.webp"
         },
         {
             "card_title": "Basic Probability and Statistics",
             "card_subtitle": "Full Course",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_basic_prob_stats_full.pdf",
-            "card_thumbnail": "images/ck12/basic_probab_full.png"
+            "card_thumbnail": "images/ck12/basic_probab_full.webp"
         },
         {
             "card_title": "Biology",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_biology.pdf",
-            "card_thumbnail": "images/ck12/bio.png"
+            "card_thumbnail": "images/ck12/bio.webp"
         },
         {
             "card_title": "Biology",
             "card_subtitle": "Workbook",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_biology_workbook.pdf",
-            "card_thumbnail": "images/ck12/bio_workbook.png"
+            "card_thumbnail": "images/ck12/bio_workbook.webp"
         },
         {
             "card_title": "Biology",
             "card_subtitle": "Teacher Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_biology_teacher_edition.pdf",
-            "card_thumbnail": "images/ck12/bio_teacher.png"
+            "card_thumbnail": "images/ck12/bio_teacher.webp"
         },
         {
             "card_title": "CK-12 Advance Probability and Statistics Concept",
             "card_subtitle": "Short Course",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_adv_prob_stats_concept.pdf",
-            "card_thumbnail": "images/ck12/advanced_probab.png"
+            "card_thumbnail": "images/ck12/advanced_probab.webp"
         },
         {
             "card_title": "CK-12 Basic Probability and Statistics Concept",
             "card_subtitle": "Full Course",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_basic_prob_stats_concept.pdf",
-            "card_thumbnail": "images/ck12/basic_probab_concept_full.png"
+            "card_thumbnail": "images/ck12/basic_probab_concept_full.webp"
         },
         {
             "card_title": "CK-12 People's Physics Concepts",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_people_physics_concepts.pdf",
-            "card_thumbnail": "images/ck12/people_physics_concept.png"
+            "card_thumbnail": "images/ck12/people_physics_concept.webp"
         },
         {
             "card_title": "CK-12 Trigonometry Concept",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_trigonometry_concepts.pdf",
-            "card_thumbnail": "images/ck12/trigonometry_concept.png"
+            "card_thumbnail": "images/ck12/trigonometry_concept.webp"
         },
         {
             "card_title": "Calculus",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_calculus.pdf",
-            "card_thumbnail": "images/ck12/calc.png"
+            "card_thumbnail": "images/ck12/calc.webp"
         },
         {
             "card_title": "Calculus",
             "card_subtitle": "Teacher Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_calculus_teacher_edition.pdf",
-            "card_thumbnail": "images/ck12/calc_teacher.png"
+            "card_thumbnail": "images/ck12/calc_teacher.webp"
         },
         {
             "card_title": "Chemistry",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_chemistry.pdf",
-            "card_thumbnail": "images/ck12/chemistry.png"
+            "card_thumbnail": "images/ck12/chemistry.webp"
         },
         {
             "card_title": "Chemistry",
             "card_subtitle": "Teacher Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_chemistry_teacher_edition.pdf",
-            "card_thumbnail": "images/ck12/chemistry_teacher.png"
+            "card_thumbnail": "images/ck12/chemistry_teacher.webp"
         },
         {
             "card_title": "Chemistry",
             "card_subtitle": "Lab and Demo",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_chemistry_labs_demos.pdf",
-            "card_thumbnail": "images/ck12/chemistry_lab_demo.png"
+            "card_thumbnail": "images/ck12/chemistry_lab_demo.webp"
         },
         {
             "card_title": "Earth Science",
             "card_subtitle": "For Middle Schools",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_earth_science_ms.pdf",
-            "card_thumbnail": "images/ck12/es_midschool.png"
+            "card_thumbnail": "images/ck12/es_midschool.webp"
         },
         {
             "card_title": "Earth Science",
             "card_subtitle": "For High Schools",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_earth_science_hs.pdf",
-            "card_thumbnail": "images/ck12/es_hischool.png"
+            "card_thumbnail": "images/ck12/es_hischool.webp"
         },
         {
             "card_title": "Earth Science Concepts",
             "card_subtitle": "Earth Science",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_earth_science_concepts.pdf",
-            "card_thumbnail": "images/ck12/es_concept.png"
+            "card_thumbnail": "images/ck12/es_concept.webp"
         },
         {
             "card_title": "Engineering",
             "card_subtitle": "An Introduction for High School",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_engineering_hs.pdf",
-            "card_thumbnail": "images/ck12/engineering.png"
+            "card_thumbnail": "images/ck12/engineering.webp"
         },
         {
             "card_title": "Geometry",
             "card_subtitle": "Teacher Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_geometry_teacher_edition.pdf",
-            "card_thumbnail": "images/ck12/geometry_teacher.png"
+            "card_thumbnail": "images/ck12/geometry_teacher.webp"
         },
         {
             "card_title": "Life Science for Middle School",
             "card_subtitle": "Science",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_life_science_ms.pdf",
-            "card_thumbnail": "images/ck12/life_science.png"
+            "card_thumbnail": "images/ck12/life_science.webp"
         },
         {
             "card_title": "Physics",
             "card_subtitle": "From Stargazers to Starships",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_physics_star.pdf",
-            "card_thumbnail": "images/ck12/physics_star.png"
+            "card_thumbnail": "images/ck12/physics_star.webp"
         },
         {
             "card_title": "Probability and Statistics",
             "card_subtitle": "Advanced Placement",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_prob_stats_adv_placement.pdf",
-            "card_thumbnail": "images/ck12/adv_probab_stat.png"
+            "card_thumbnail": "images/ck12/adv_probab_stat.webp"
         },
         {
             "card_title": "Trigonometry",
             "card_subtitle": "Student Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_trigonometry.pdf",
-            "card_thumbnail": "images/ck12/trigonometry.png"
+            "card_thumbnail": "images/ck12/trigonometry.webp"
         },
         {
             "card_title": "Trigonometry",
             "card_subtitle": "Teacher Edition",
             "card_link": "http://rachel.koompi.com/modules/ck12/ck12_trigonometry_teacher_edition.pdf",
-            "card_thumbnail": "images/ck12/trigonometry_teacher.png"
+            "card_thumbnail": "images/ck12/trigonometry_teacher.webp"
         }
     ];
 
