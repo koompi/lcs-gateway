@@ -620,31 +620,31 @@ function read_hesperian_json(){
             "card_title": "A Book for Midwives",
             "card_subtitle": "Care for pregnancy and birth",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/en_midw_2011_Full_Book/page1.html",
-            "card_thumbnail": "images/hesperian/a_book_for_midwife.png"
+            "card_thumbnail": "images/hesperian/a_book_for_midwife.webp"
         },
         {
             "card_title": "Cholera Prevention",
             "card_subtitle": "Fact Sheet",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/Cholera_EN/page1.html",
-            "card_thumbnail": "images/hesperian/how_to_prevent_chloera.png"
+            "card_thumbnail": "images/hesperian/how_to_prevent_chloera.webp"
         },
         {
             "card_title": "Disabled Village Children",
             "card_subtitle": "Care for Disabled Child",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/DVC_2009/page1.html",
-            "card_thumbnail": "images/hesperian/disabled_village_children.png"
+            "card_thumbnail": "images/hesperian/disabled_village_children.webp"
         },
         {
             "card_title": "Environmental Health",
             "card_subtitle": "Community Guide",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/en_cgeh_2012_full/page1.html",
-            "card_thumbnail": "images/hesperian/a_community_guide_to_environmental_health.png"
+            "card_thumbnail": "images/hesperian/a_community_guide_to_environmental_health.webp"
         },
         {
             "card_title": "Helping Children Who Are Blind",
             "card_subtitle": "Care for Blind Children",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/en_hcwb_2000_whole_book/page1.html",
-            "card_thumbnail": "images/hesperian/helping_children_who_are_blind.png"
+            "card_thumbnail": "images/hesperian/helping_children_who_are_blind.webp"
         },
         {
             "card_title": "Helping Children Who Are Deaf",
@@ -656,43 +656,43 @@ function read_hesperian_json(){
             "card_title": "Helping Health Workers Learn",
             "card_subtitle": "Learning Material",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/en_hhwl_2012_full/page1.html",
-            "card_thumbnail": "images/hesperian/helping_health_worker_learn.png"
+            "card_thumbnail": "images/hesperian/helping_health_worker_learn.webp"
         },
         {
             "card_title": "Sanitation and Cleanliness",
             "card_subtitle": "For a Healthy Environment",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/EHB_Sanitation_EN_watermark/page1.html",
-            "card_thumbnail": "images/hesperian/sanitation_and_cleanliness.png"
+            "card_thumbnail": "images/hesperian/sanitation_and_cleanliness.webp"
         },
         {
             "card_title": "Water for Life",
             "card_subtitle": "Community water security",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/ehb_water_EN_watermark/page1.html",
-            "card_thumbnail": "images/hesperian/water_for_life.png"
+            "card_thumbnail": "images/hesperian/water_for_life.webp"
         },
         {
             "card_title": "Where There Is No Dentist",
             "card_subtitle": "For Teeth Health",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/en_dent_2012_full/page1.html",
-            "card_thumbnail": "images/hesperian/where_there_is_no_dentist.png"
+            "card_thumbnail": "images/hesperian/where_there_is_no_dentist.webp"
         },
         {
             "card_title": "Where There Is No Doctor",
             "card_subtitle": "A village health care handbook",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/en_wtnd_2011_full/page1.html",
-            "card_thumbnail": "images/hesperian/where_there_is_no_doctor_a_village_health_care_handbook.png"
+            "card_thumbnail": "images/hesperian/where_there_is_no_doctor_a_village_health_care_handbook.webp"
         },
         {
             "card_title": "Where Women Have No Doctor",
             "card_subtitle": "For Woman Health",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/en_wwhnd_2012_full/page1.html",
-            "card_thumbnail": "images/hesperian/where_woman_have_no_doctor.png"
+            "card_thumbnail": "images/hesperian/where_woman_have_no_doctor.webp"
         },
         {
             "card_title": "Women with Disabilities",
             "card_subtitle": "A Health Handbook",
             "card_link": "http://rachel.koompi.com/modules/hesperian_health/en_WWD_2008_full_book/page1.html",
-            "card_thumbnail": "images/hesperian/a_health_handbook_for_woman_with_disability.png"
+            "card_thumbnail": "images/hesperian/a_health_handbook_for_woman_with_disability.webp"
         }
     ];
     return hesperian_json;
@@ -709,7 +709,7 @@ function read_sidebar() {
             {
                 "disp_name": "STEM",
                 "svg": false,
-                "img_src": "images/stem-logo.png"
+                "img_src": "images/stem-logo.webp"
             },
             {
                 "disp_name": "Health",
@@ -741,22 +741,22 @@ function read_sidebar() {
             {
                 "disp_name": "Science",
                 "svg": false,
-                "img_src": "images/stem-logo.png"
+                "img_src": "images/stem-logo.webp"
             },
             {
                 "disp_name": "Technology",
                 "svg": false,
-                "img_src": "images/stem-logo.png"
+                "img_src": "images/stem-logo.webp"
             },
             {
                 "disp_name": "Engineering",
                 "svg": false,
-                "img_src": "images/stem-logo.png"
+                "img_src": "images/stem-logo.webp"
             },
             {
                 "disp_name": "Mathematic",
                 "svg": false,
-                "img_src": "images/stem-logo.png"
+                "img_src": "images/stem-logo.webp"
             }
         ]
     };
