@@ -1,6 +1,15 @@
 function read_main_cards() {
     const main_cards = [
         {
+            "card_title": "Admin Content Server",
+            "card_subtitle": "KOOMPI",
+            "card_link": "http://admin.koompi.com",
+            "card_thumbnail": "images/main/test.png",
+            "card_categories": [
+                "Home"
+            ]
+        },
+        {
             "card_title": "CK-12 Textbooks",
             "card_subtitle": "Books",
             "card_link": "javascript: display_subcard('ck12', 'ck12-offcanvas')",
