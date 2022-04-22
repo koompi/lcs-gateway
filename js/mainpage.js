@@ -7,7 +7,7 @@ function generate_sidebar(enable_attr) {
         '<div class="modal-header justify-content-center text-center">',
         '<h5 class="modal-title" id="exampleModalLabel">',
         '<a class="navbar-brand ps-2" href="#">',
-        '<img src="images/Koompi-Dark.png" alt="KOOMPI" width="150" height="40" srcset=""',
+        '<img src="images/Koompi-Dark.webp" alt="KOOMPI" width="150" height="40" srcset=""',
         'class="d-inline-block align-text-top">',
         '</a>',
         '</h5>',
@@ -106,7 +106,7 @@ function generate_headnav() {
         '<span class="navbar-toggler-icon"></span>',
         '</button>',
         '<a class="navbar-brand ps-2" href="index.html">',
-        '<img src="images/Koompi-White.png" alt="KOOMPI" width="150" height="40" srcset="" class="d-inline-block align-text-top">',
+        '<img src="images/Koompi-White.webp" alt="KOOMPI" width="150" height="40" srcset="" class="d-inline-block align-text-top">',
         '</a>',
         '<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">',
         '<svg class="bi bi-search" width="16" height="16">',
@@ -236,6 +236,10 @@ function display_subcard(div_id, elmt_id) {
         else if (div_id == "olpc") {
             const uiel_json = read_olpc_json();
             generate_subcards(uiel_json, "olpc", 'OLPC Educational Packages');
+        }
+        else if (div_id == "khan_ed") {
+            const khan_ed_json = read_khan_ed_json();
+            generate_subcards(khan_ed_json, "khan_ed", 'Khan Academy STEM Education');
         }
     }
     var myOffcanvas = document.getElementById(elmt_id);
