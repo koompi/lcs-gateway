@@ -63,7 +63,7 @@ function read_main_cards() {
         {
             "card_title": "Khan Academy",
             "card_subtitle": "Education",
-            "card_link": "http://rachel.koompi.com/modules/khan_academy/index.html",
+            "card_link": "javascript: display_subcard('khan_ed', 'khan_ed-offcanvas')",
             "card_thumbnail": "images/main/kalogo.webp",
             "card_categories": [
                 "Home",
@@ -500,31 +500,31 @@ function read_uiel_json(){
             "card_title": "Primary Mathematics in English",
             "card_subtitle": "Teacher Guide",
             "card_link": "http://rachel.koompi.com/modules/iicba/PRIMARY_MATHS_SERIES/MATH_PAGES/index_pages/math_home.htm",
-            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+            "card_thumbnail": "images/main/UNESCO-IICBA.webp"
         },
         {
             "card_title": "Primary Science in English",
             "card_subtitle": "Teacher Guide",
             "card_link": "http://rachel.koompi.com/modules/iicba/PRIMARY_SCIENCE_SERIES/SCIENCE_PAGES/index_pages/science_home.htm",
-            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+            "card_thumbnail": "images/main/UNESCO-IICBA.webp"
         },
         {
             "card_title": "Secondary Science in English",
             "card_subtitle": "Teacher Guide",
             "card_link": "http://rachel.koompi.com/modules/iicba/SECONDARY_SCIENCE_SERIES/index_pages/science_home.htm",
-            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+            "card_thumbnail": "images/main/UNESCO-IICBA.webp"
         },
         {
             "card_title": "School Management in English",
             "card_subtitle": "Teacher Guide",
             "card_link": "http://rachel.koompi.com/modules/iicba/Better_Schools/index.html",
-            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+            "card_thumbnail": "images/main/UNESCO-IICBA.webp"
         },
         {
             "card_title": "HIV/AIDS Electronic Library",
             "card_subtitle": "Teacher Resouce",
             "card_link": "http://rachel.koompi.com/modules/iicba/Better_Schools/index.html",
-            "card_thumbnail": "images/main/UNESCO-IICBA.jpg"
+            "card_thumbnail": "images/main/UNESCO-IICBA.webp"
         }
     ];
     return uiel_json;   
@@ -536,82 +536,166 @@ function read_olpc_json(){
             "card_title": "Storybooks",
             "card_subtitle": "OLPC Project",
             "card_link": "http://rachel.koompi.com/modules/olpc/icdl/index.en.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "Web Design",
             "card_subtitle": "OLPC Project",
             "card_link": "http://rachel.koompi.com/modules/olpc/web_design/index.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "Wikibooks",
             "card_subtitle": "OLPC Project",
             "card_link": "http://rachel.koompi.com/modules/olpc/wikibooks/index.en.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "WikiSlice",
             "card_subtitle": "General",
             "card_link": "http://rachel.koompi.com/modules/olpc/wikislice-en/index.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "WikiSlice",
             "card_subtitle": "Animals",
             "card_link": "http://rachel.koompi.com/modules/olpc/wikislice-animals-en/index.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "Wikihow",
             "card_subtitle": "OLPC Project",
             "card_link": "http://rachel.koompi.com/modules/olpc/wikihow/index.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "WikiSlice",
             "card_subtitle": "Chemistry",
             "card_link": "http://rachel.koompi.com/modules/olpc/wikislice-chemistry-en/index.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "WikiSlice",
             "card_subtitle": "Physics",
             "card_link": "http://rachel.koompi.com/modules/olpc/wikislice-physics-en/index.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "Nature Photograph",
             "card_subtitle": "OLPC Project",
             "card_link": "http://rachel.koompi.com/modules/olpc/wp-world-images/index.en.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "World Culture",
             "card_subtitle": "OLPC Project",
             "card_link": "http://rachel.koompi.com/modules/olpc/wdl/index.en.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "Musical Instruments",
             "card_subtitle": "How to Build",
             "card_link": "http://rachel.koompi.com/modules/olpc/musical_look_at_waste/index.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "y-Bee-See",
             "card_subtitle": "An interactive ABC picturebook",
             "card_link": "http://rachel.koompi.com/modules/olpc/Yay-Bee-See/index.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         },
         {
             "card_title": "OLPC Dictionary",
             "card_subtitle": "A compact multilingual translation dictionary",
             "card_link": "http://rachel.koompi.com/modules/olpc/dictionary-m1/index.en.html",
-            "card_thumbnail": "images/main/OLPC.png"
+            "card_thumbnail": "images/main/OLPC.webp"
         }
     ];
     return olpc_json;
+}
+
+function read_khan_ed_json(){
+    const khan_ed_json = [
+        {
+            "card_title": "Arithmetic and Pre-Algebra",
+            "card_subtitle": "Khan Academy Math",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/math/arithmetic/index.html",
+            "card_thumbnail": "images/khan_ed/arithmetic.webp"
+        },
+        {
+            "card_title": "Algebra",
+            "card_subtitle": "Khan Academy Math",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/math/algebra/index.html",
+            "card_thumbnail": "images/khan_ed/algebra.webp"
+        },
+        {
+            "card_title": "Geometry",
+            "card_subtitle": "Khan Academy Math",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/math/geometry/index.html",
+            "card_thumbnail": "images/khan_ed/geometry.webp"
+        },
+        {
+            "card_title": "Trigonometry and PreCalculus",
+            "card_subtitle": "Khan Academy Math",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/math/trigonometry/index.html",
+            "card_thumbnail": "images/khan_ed/trigonometry.webp"
+        },
+        {
+            "card_title": "Calculus",
+            "card_subtitle": "Khan Academy Math",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/math/calculus/index.html",
+            "card_thumbnail": "images/khan_ed/calculus.webp"
+        },
+        {
+            "card_title": "Probability and Statistics",
+            "card_subtitle": "Khan Academy Math",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/math/probability/index.html",
+            "card_thumbnail": "images/khan_ed/probab_stat.webp"
+        },
+        {
+            "card_title": "Differential Equations",
+            "card_subtitle": "Khan Academy Math",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/math/differential-equations/index.html",
+            "card_thumbnail": "images/khan_ed/diff.webp"
+        }
+        ,{
+            "card_title": "Biology",
+            "card_subtitle": "Khan Academy Science & Economics",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/science/biology/index.html",
+            "card_thumbnail": "images/khan_ed/bio.webp"
+        },
+        {
+            "card_title": "Chemistry",
+            "card_subtitle": "Khan Academy Science & Economics",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/math/algebra/index.html",
+            "card_thumbnail": "images/khan_ed/chem.webp"
+        },
+        {
+            "card_title": "Physics",
+            "card_subtitle": "Khan Academy Science & Economics",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/science/physics/index.html",
+            "card_thumbnail": "images/khan_ed/physics.webp"
+        },
+        {
+            "card_title": "Cosmology and Astronomy",
+            "card_subtitle": "Khan Academy Science & Economics",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/science/cosmology-and-astronomy/index.html",
+            "card_thumbnail": "images/khan_ed/astro.webp"
+        },
+        {
+            "card_title": "Organic Chemistry",
+            "card_subtitle": "Khan Academy Science & Economics",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/science/organic-chemistry/index.html",
+            "card_thumbnail": "images/khan_ed/org_chem.webp"
+        },
+        {
+            "card_title": "Healthcare and Medicine",
+            "card_subtitle": "Khan Academy Science & Economics",
+            "card_link": "http://rachel.koompi.com/modules/khan_academy/science/healthcare-and-medicine/index.html",
+            "card_thumbnail": "images/khan_ed/med.webp"
+        }
+    ];
+    return khan_ed_json;
 }
 
 function read_hesperian_json(){

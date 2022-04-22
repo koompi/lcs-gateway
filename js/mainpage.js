@@ -237,6 +237,10 @@ function display_subcard(div_id, elmt_id) {
             const uiel_json = read_olpc_json();
             generate_subcards(uiel_json, "olpc", 'OLPC Educational Packages');
         }
+        else if (div_id == "khan_ed") {
+            const khan_ed_json = read_khan_ed_json();
+            generate_subcards(khan_ed_json, "khan_ed", 'Khan Academy STEM Education');
+        }
     }
     var myOffcanvas = document.getElementById(elmt_id);
     var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
