@@ -19,3 +19,12 @@ Clone this project with "git clone"
 - Go to the directory location with the default File Explorer
 - run the "index.html" file with the default browser
 
+### Demo
+- Main Page
+![Main Page](images/main_page.png)
+
+- Sidebar
+![Sidebar](images/sidebar.png)
+
+- Item Subcontent
+![Item_Subcontent](/images/sub_page.png)
